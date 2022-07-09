@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech-Coder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+
+
+</head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<body>
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .quote {
+            text-align: center;
+            color: rgba(9, 226, 250, 0.955);
+        }
+        body{
+            background-color:#060606;
+        }
+        .navbar-brand{
+          text-align: center;
+        }
+        .navbar-item{
+            color: blue;
+        }
+        .lead{
+           color:rgb(254, 249, 249);
+           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .name{
+            color: rgb(255, 84, 17); 
+            font-style:inherit;
+            font-family:'Times New Roman', Times, serif;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-fill-mode: backwards;
+            animation:infinite;
+           
+        }
+        .container{
+            /* background-color: rgb(0, 0, 0); */
+            background-color: #060606;
+
+        }
+       
+
+        #video {
+            -webkit-transition: 23s ease-in-out left !important;
+            -moz-transition: 23s ease-in-out left;
+            -o-transition: 23s ease-in-out left;
+            transition: 23s ease-in-out left !important;
+        }
+
+        .youtubevid {
+            height: 0px;
+            padding-top: 5px;
+            padding-bottom: 56.2%;
+            position: relative;
+        }
+       .p{
+        color: blue;
+       }
+       
+        .youtubevid iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        */ .fa {
+            /* padding: 200px;    */
+            text-align: center;
+            margin: 10px 12px;
+            font-size: 50px;
+            width: 50px;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            /* color: rgb(73, 26, 227);  */
+            font-size: 30px;
+            /* padding: 010x; */
+            margin: 10px 2px;
+            margin-left: 10px;
+            width: 0px;
+        }
+
+        .fa-twitter {
+            background: #000102;
+            color: white;
+        }
+
+        .fa-instagram {
+            /* background: #f24646;   */
+            /* color: rgb(15, 14, 14);   */
+            margin-left: 20px;
+            width: 20px;
+            font-size: 30px;
+        }
+
+        .fa-linkedin {
+            /* background: #007bb5;   */
+            /* color: white;   */
+            margin-left: 20px;
+            width: 20px;
+            font-size: 30px;
+        }
+    </style>
+    <script type="text/javascript">
+
+
+        $(function () {
+            $("#navbarNav li a").click(function () {
+                if ($(this).text() == "ABOUT") {
+                    $('#urModal').modal('show');
+                }
+            });
+        });
+
+
+
+        $(function () {
+            $("#navbarNav li a").click(function () {
+                if ($(this).text() == "CONTACT") {
+                    $('#myModal').modal('show');
+                }
+            });
+        });
+
+        $(function () {
+            $("#navbarNav li a").click(function () {
+                if ($(this).text() == "SERVICE") {
+                    $('#serviceModal').modal('show');
+                }
+            });
+        });
+
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Tech-Coder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">HOME </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SERVICE</a>
+                </li>
+
+            </ul>
+        </div>
+        </div>
+
+    </nav>
+
+    <div class="modal fade" id="urModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">We make everything possible</h4>
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>
+                        "a project team or team is defined as "an interdependent collection of individuals who work together towards a common goal and who share responsibility for specific outcomes of their organizations"..<br>
+
+
+                        Here we all are from middle class family and joined B.tech in Computer science course @"SharnabasavaUniversity" Batch-2020
+                        And we started our journey as the name of Project-team....
+                         successfully completed 3 sem with 3 Projects 
+                        Moving towards web development in deep.....
+                        I'm sure will do our best website in further days
+                     
+                    </p>
+                    <a href="tech.html">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">To join with us register yourself</h4>
+                    <button type="submit" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+
+                <form action="#" method="get">
+                    <div class="modal-body">
+                        <h5>Register here</h5><br>
+                        <div class="form-floating mb-3">
+                            <input type="Name" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">User Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email Address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="floatingInput" placeholder="Number">
+                            <label for="floatingInput">Phone Number</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="Text" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Why you want to join with us</label>
+                        </div>
+
+                    </div>
+
+                    <input type="submit" value="submit"  href="#" name="submit" class="btn btn-primary">
+
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+    </form>
+
+    <div class="modal fade" id="serviceModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">All kind of work will done here</h4>
+                    <!-- <button type="submit" class="close" data-dismiss="modal">&times;</button> -->
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <ul>
+                        <li>Frontend projects</li>
+                        <li>Backend projects</li>
+                        <li>computer solution</li>
+                        <li>System set-up</li>
+                        <li>Online application</li>
+                        <li>Mathematic-solution</li>
+                        <li>designing & drawing </li>
+
+
+                    </ul>
+
+
+                    <!-- <div class="modal-footer"> -->
+                    <a href="tech.html">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1">
+            <img src="code1.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>We are programmers</h5>
+              <p>“Any fool can write code that a computer can understand. Good programmers write code that humans can understand”.</p>
+            </div>
+          </div>
+          
+          </div>    
+        
+          </div>
+        
+      </div>
+      
+      
+    <div class="quote">
+        <h1>"Talent wins games, but teamwork and intelligence win championships."</h1>
+    </div>
+
+
+    <!-- START THE FEATURETTES -->
+    <div class="container">
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">
+                   <div class="name"><h1>Prajwal Bandi</h1></div> <span class="text-muted">Team member
+                        .</span>
+                </h2>
+             <p class="lead">I'm from middle class family ,I started my journey with  web-development, i'm expert in <strong>frontend-developement</strong> 
+                    coding is my hobby, i love to work more and more ,family is my 1st preference, i'm quite different compare to othres and wanted to be a Developer.!
+                    
+                    .
+                    <div class="fa">
+                        <a href="https://www.facebook.com/prajwal.bandi.1" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/invites/contact/?i=niu9nghn94cf&utm_content=27z067j" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/prajwal-bandi-83b3a5215" class="fa fa-linkedin"></a>
+                    </div></p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
+                    height="400" img src="prajwal.jpeg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+                </svg>
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2"><br>   
+                <h2 class="featurette-heading fw-normal lh-1">
+                  <div class="name"><h1>Rohit Pillai</h1> </div>  <span class="text-muted">Team member
+                        .</span>
+                </h2>
+                 <p class="lead">I started my journey with playing computer games,i'm expert in <strong>Gaming & web designing</strong> ,Gaming is my hobby, m good at drawing stuffs and crafts sarcastic amount of knowledge in Hardware components of  Electronics  
+                   
+                <div class="fa">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="https://instagram.com/the_dextrous_arlic_?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+                .</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
+                    height="400" img src="rohit.jpeg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+                </svg>
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7"><br><br>
+                <h2 class="featurette-heading fw-normal lh-1">
+                 <div class="name"><h1>Keerti Muradi</h1></div>    <span class="text-muted">Team member.</span>
+                </h2>
+                <p> <div class="lead">I  am interested in maths.l like to play math related  games. Certain qualities that are nurtured by math are power of reasoning , creativity,  critical thinking,  abstract thinking , problem solving ability and I like listening to music when I bored.</div>
+                </p>
+                    <div class="fa">
+                        <a href="https://www.facebook.com/keerti.muradi" class="fa fa-facebook"></a>
+                        <a href="https://instagram.com/keerti_muradi?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </div></p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  width="150"
+                    height="20" img src="keerti.jpeg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                 <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+                </svg>
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2"><br><br>
+                <h2 class="featurette-heading fw-normal lh-1">
+                 <div class="name"><h1>Ranjita Patil</h1></div>    <span class="text-muted">Team member
+                        .</span>
+                </h2>
+                <p class="lead">I love <strong> MOVIES </strong>bcz it will take me to a different level of entertainment nd movies brings out the various kind of emotions nd some movies potry the value of life that enlightnes the minds of people.
+                    <div class="fa">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="https://instagram.com/ranjitapatil9?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </div></p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
+                    height="400" img src="ranjita1.jpeg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+                </svg>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+</body>
+<br><br><br>
+<footer class="container">
+    <p class="float-end"><a href="#">Team</a></p>
+    <p>&copy; 2020–2024 Project-Team &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
+</main>
+
+
+<script src="/docs/5.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
